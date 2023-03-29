@@ -1,0 +1,51 @@
+* {
+    height: 100%;
+    /* Establece la altura en un 100% de la altura de la ventana */
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+    padding: 0;
+    /* Elimina el relleno por defecto */
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    background-color: rgb(255, 255, 255);
+    grid-area: 1 / 1 / 13 / 13;
+}
+
+.div2 {
+    background-color: rgb(42, 103, 173);
+    grid-area: 1 / 1 / 4 / 13;
+}
+
+.div3 {
+    background-color: rgb(111, 157, 196);
+    grid-area: 5 / 3 / 9 / 5;
+    border-radius: 5em;
+}
+
+.div4 {
+    background-color: blue;
+    grid-area: 5 / 6 / 9 / 8;
+    border-radius: 5em;
+}
+
+.div5 {
+    background-color: aquamarine;
+    grid-area: 5 / 9 / 9 / 11;
+    border-radius: 5em;
+}
+
+.response{
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+}
