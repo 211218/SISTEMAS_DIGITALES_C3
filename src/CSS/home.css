@@ -5,6 +5,9 @@
     /* Elimina los márgenes por defecto */
     padding: 0;
     /* Elimina el relleno por defecto */
+    font-family: 'Rock Salt', cursive;
+    
+
 
 }
 
@@ -14,38 +17,89 @@
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
 }
 
 .div1 {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #00bf72);  
     grid-area: 1 / 1 / 13 / 13;
 }
 
+
 .div2 {
-    background-color: rgb(42, 103, 173);
+    border-radius: #051937;
     grid-area: 1 / 1 / 4 / 13;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+
+.title-home{
+    width: 300px;
+    height: 50px;
 }
 
 .div3 {
-    background-color: rgb(111, 157, 196);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #008793, #008793);
     grid-area: 5 / 3 / 9 / 5;
-    border-radius: 5em;
+    border-radius: 4em;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+
+
 }
 
 .div4 {
-    background-color: blue;
+    font-family: 'Rock Salt', cursive;
+
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #008793, #008793);
     grid-area: 5 / 6 / 9 / 8;
-    border-radius: 5em;
+    border-radius: 4em;
+    border: 2px solid rgb(0, 0, 0);
+        color: white;
+
 }
 
 .div5 {
-    background-color: aquamarine;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #008793, #008793);
     grid-area: 5 / 9 / 9 / 11;
-    border-radius: 5em;
+    border-radius: 4em;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
 }
 
+
 .response{
-    background-color: beige;
-    height: 100%;
-    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
+
+.response button {
+    width: 50%;
+    height: 50%;
+    border-radius: 5em;
+    background-color: rgb(39, 50, 55);
+    color: white;
+    justify-content: center;
+}
+
+.text{
+    padding-left: 1em;
+}
+
+a{
+    text-align: center;
+}
+
+
+.title{
+    text-align: center;
+}
+

@@ -3,11 +3,8 @@ import db from '../firebase';
 import { useState, useEffect } from 'react';
 import { ref, onValue} from "firebase/database";
 
-const History = () => {
+const Presion = () => {
 
-
-
-    const [todo, setTodo] = useState("");
     const [todos, setTodos] = useState([]);
 
     useEffect(() => {
@@ -30,7 +27,7 @@ const History = () => {
             </div>
             <div className="div2">
                 <div className='title-home'>
-                    <h1 >Historial Humedad</h1>
+                    <h1 >Hist.. Atmosferica</h1>
                 </div>
             </div>
             <div className="div31">
@@ -39,8 +36,8 @@ const History = () => {
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">HUMEDAD</th>
-                            <th scope="col">TEMPERATURA</th>
+                            <th scope="col">Presion</th>
+                            <th scope="col">Altitud</th>
                             <th scope="col">FECHA</th>
 
                         </tr>
@@ -50,8 +47,8 @@ const History = () => {
                                 {todos.map((todo) => (
                                     <tr>
                                         <th scope="row">{todo.Id}</th>
-                                        <td>{todo.Humedad}</td>
-                                        <td>{todo.Temperatura}</td>
+                                        <td>{todo.Presion}</td>
+                                        <td>{todo.Altitud}</td>
                                         <td>{todo.Hora}</td>
 
                                     </tr>
@@ -64,4 +61,4 @@ const History = () => {
     )
 }
 
-export default History;
+export default Presion;
