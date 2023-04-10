@@ -65,6 +65,7 @@ const Home = () => {
                         <button type="button" >Historial</button>
                     </Link>
                 </div>
+
                 
             </div>
             <div className="div5">
